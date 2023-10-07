@@ -10,7 +10,7 @@ Para rodar o projeto é necessário ter o [Rust](https://www.rust-lang.org/pt-BR
 
 ```bash
 git clone https://github.com/Nrdias/feira_do_rolo.git
-cd feira_do_rolo
+cd feira_do_rolo/back-end
 cargo build
 cargo run
 ```
@@ -33,7 +33,7 @@ Você poderá conferir no terminal em que foi iniciado a API, as requisições e
 
 Criei um script com javascript que pode ser executado no terminal com <b>node</b> para fazer diversas adições através de requests para a API, e no final nos traz a lista dos itens inseridos, para isso é necessário ter o [node.js](https://nodejs.org/en) instalado
 
-Para executar o script, basta executar o seguinte comando:
+Para usar o script, dentro da pasta back-end, execute o seguinte comando:
 
     node script.js
 
