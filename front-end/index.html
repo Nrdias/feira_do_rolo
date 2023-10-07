@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header style="text-align: center;">
+      <h1>Feira do Rolo</h1>
+    </header>
+    <div id="app">
+      <div id="form">
+        <label for="name">Nome do Produto</label>
+        <input type="text" name="name" id="name" />
+        <label for="description">Descrição</label>
+        <input type="text" name="description" id="description" />
+        <label for="value">Valor</label>
+        <input type="text" name="value" id="value" />
+        <label for="seller">Nome do Vendedor</label>
+        <input type="text" name="seller" id="seller" />
+        <button id="addItem_button">Cadastrar Produto</button>
+      </div>
+      <button id="listItem_button">Listar Produtos</button>
+      <div id="item-list">
+
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
