@@ -1,4 +1,4 @@
-# <center> Feira do Rolo
+# Feira do Rolo
 
 O Desafio consistia em utilizar [Axum framework](https://docs.rs/axum/latest/axum/) para criar uma API para envio e recebimento de dados no formato JSON.
 
@@ -55,3 +55,8 @@ yarn dev
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+## Dificuldades e Melhorias
+ - Por não ter conhecimento de Rust, acredito que o código ficou poluido, tive dificuldade de achar soluções somente com a documentação, e acabei recorrendo a chatGPT e StackOverFlow para criar o CORS e entender melhor a estrutura de dados.
+ - CORS estático, tentei configurar para que recebesse requisições de qualquer porta do localhost, no entanto não consegui, por isso o front-end só funciona se for inicializado pelo `yarn dev`, pois a porta que aceita requisições da web é a 5173.
+ - Apesar de ter adicionado a validação de preço, não fiz alguma adição significativa, ainda não tenho experiência com banco de dados, então também não pude implementar um sistema de dados persistentes.
