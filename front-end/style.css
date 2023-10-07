@@ -36,8 +36,8 @@
 ::-webkit-scrollbar-thumb:vertical{height:5px;background-color:#B3B3B3;-webkit-border-radius:0px;border-left: 2px solid #ffffff;border-right: 2px solid #ffffff;border-top: 1px solid #ffffff;border-bottom: 1px solid #ffffff;}
 ::-webkit-scrollbar-thumb:vertical:hover {background-color: #808080 !important;}
 ::-webkit-scrollbar-thumb:horizontal{width:3px;background-color:#B3B3B3;-webkit-border-radius:0px;}
-::-webkit-scrollbar-button:vertical:increment {background-image:none !important);}
-::-webkit-scrollbar-button:vertical:decrement {background-image:none !important);}
+::-webkit-scrollbar-button:vertical:increment {background-image:none !important;}
+::-webkit-scrollbar-button:vertical:decrement {background-image:none !important;}
         
 
 #item-list > p{
