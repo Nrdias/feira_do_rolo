@@ -31,7 +31,13 @@ async function addItem(item){
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(item)})
-  console.log(response)
+  if(response.status == 200){
+    alert("item adicionado")
+  }
+  else{
+    alert("item não adicionado")
+  }
+  listItems()
 }
 
   async function listItems(){
@@ -40,9 +46,10 @@ async function addItem(item){
   })
   .then(response => response.json())
   .then(data => {
+    list.innerText = "";
     for(let i in data){
       const p = document.createElement('p')
-      p.innerText = `name: ${data[i].name} - descrição: ${data[i].description} - preço: ${data[i].price} - vendedor: ${data[i].merchant_name}`
+      p.innerText = `produto: ${data[i].name} | descrição: ${data[i].description} | preço: ${data[i].price} | vendedor: ${data[i].merchant_name}`
       list.appendChild(p);
     }
   })

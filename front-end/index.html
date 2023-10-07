@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Vite App</title>
   </head>
   <body>
@@ -12,20 +13,18 @@
     </header>
     <div id="app">
       <div id="form">
-        <label for="name">Nome do Produto</label>
-        <input type="text" name="name" id="name" />
-        <label for="description">Descrição</label>
-        <input type="text" name="description" id="description" />
-        <label for="value">Valor</label>
-        <input type="text" name="value" id="value" />
-        <label for="seller">Nome do Vendedor</label>
-        <input type="text" name="seller" id="seller" />
+        <input type="text" name="name" id="name" placeholder="Nome do Produto"/>
+        <input type="text" name="description" id="description" placeholder="Descrição" />
+        <input type="text" name="value" id="value" placeholder="Valor ex: 50.0"/>
+        <input type="text" name="seller" id="seller" placeholder="Vendedor" />
         <button id="addItem_button">Cadastrar Produto</button>
       </div>
-      <button id="listItem_button">Listar Produtos</button>
-      <div id="item-list">
-
-      </div>
+      <div id="items">
+        <button id="listItem_button">Listar Produtos</button>
+        <div id="item-list">
+  
+        </div></div>
+      
     </div>
     <script type="module" src="/main.js"></script>
   </body>
