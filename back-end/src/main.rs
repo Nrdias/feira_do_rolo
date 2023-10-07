@@ -12,8 +12,6 @@ use std::sync::Arc;
 use tokio::sync::RwLock;
 use tower_http::cors::{CorsLayer, Origin};
 
-
-
 #[derive(Deserialize, Serialize, Debug, Clone)]
 struct Item {
     name: String,
@@ -57,6 +55,9 @@ async fn add_item(
     Json(item): Json<Item>,
     data: axum::extract::Extension<AppData>
 ) -> impl IntoResponse {
+    if item.price < 0.0 {
+        return (StatusCode::BAD_REQUEST, "Price must be positive!");
+    }
     println!("Item adicionado {:?}", item);
     data.items.write().await.push(item);
     (StatusCode::OK, "Item added successfully!")
