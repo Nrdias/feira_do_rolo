@@ -25,7 +25,7 @@ const items = [
     },
     {
         name: "Celular",
-        description: "smartphone",
+        description: "iPhone",
         price : 1000,
         merchant_name: "Loja 4"
     }
@@ -55,7 +55,7 @@ async function testar(){
     .then(data => {
         console.log("Itens a Venda")
         for (const i in data) {
-            console.log(`produto: ${data[i].name} - descrição: ${data[i].description} - preço: ${data[i].price} - vendedor: ${data[i].merchant_name}`)       
+            console.log(`produto: ${data[i].name} | descrição: ${data[i].description} | preço: ${data[i].price} | vendedor: ${data[i].merchant_name}`)       
             }
         })
 }
