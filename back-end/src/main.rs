@@ -68,7 +68,7 @@ async fn list_items(
 ) -> impl IntoResponse {
     let items = data.items.read().await;
     if items.is_empty(){
-        println!("A lista está vazia")
+        println!("A lista está vazia");
     }
     AxumJson(items.clone())
 }
